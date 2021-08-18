@@ -1,0 +1,44 @@
+h1 , h3 {
+    color: #000000;
+    font-family: 'Lobster';
+    text-align: center;
+}
+
+h1 a, h2 a {
+    color: #C25100;
+}
+
+body {
+    padding-left: 15px;
+}
+
+.page_header {
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+    padding-left: 0;
+}
+
+.job_desc{
+    color: #fff;
+    text-align: center;
+}
+
+.line_blue{
+   background-color: #C25100; 
+}
+
+.btn_submit{
+    background-color: #C25100;
+    margin-top: 10px;
+}
+
+h2{
+    color: #000000;
+    text-align: center;
+    font-family: "Lobster";
+}
+footer{
+    color: #000;
+}

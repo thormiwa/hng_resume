@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css\resume.css' %}">
+    <title>Hng-resume</title>
+</head>
+<body>
+    <header class="page_header">
+        <div class="name_job">
+            <h1>Okafor Tomiwa</h1>
+            <h4 class="job_desc">Backend Developer</h4>
+        </div>
+    </header>
+    <div>
+        <h3>Personal Details</h3>
+        <h6>I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</h6>
+    </div>
+    <hr class="line_blue">
+    <div>
+        <h3>Contact Details</h3>
+        <ul>
+            <li>E-mail: thormiwa04@gmail.com</li>
+            <li>Mobile: 09060236822</li>
+            <li>Location: Lagos, Nigeria</li>
+        </ul>
+    </div>
+    <hr class="line_blue">
+    <div>
+        <h3>Education</h3>
+        <div>
+            <h5>Alu Holberton</h5>
+            <h6>Diploma in Software engineering</h6>
+            <h6>2020-present</h6>
+            <ul>
+                <li>Created an ALX holberton Airbnb Clone. </li>
+                <li>Created a Portfolion Project</li>
+                <li>Organized Peer leading discussions to help people understand programming effectively</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="line_blue">
+    <div>
+        <h3>Software Projects</h3>
+        <div>
+            <h4><a href="">The Alu Library</a></h4>
+            <li>An Holberton project created for ALU students  to borrow  books and manage the library.</li>
+            <li>Implemented technologies including  Python, Django, HTML and CSS.</li>
+        </div>
+        <hr class="line_black">
+        <div>
+            <h4><a href="">The Food Plug</a></h4>
+            <li>A side project created for people to learn Food recipes and also plug to new food they can try out.</li>
+            <li>Implemented technologies including  Python, Django, HTML, CSS and Figma</li>
+        </div>
+    </div>
+    <hr class="line_blue">
+    <div>
+        <h3>Skills and Abilities</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>Team-work </li>
+            <li>Problem Solving Skills</li>
+            <li>Communication Skills</li>
+            <li>Leadership ability</li>
+        </ul>
+    </div>
+    <hr class="line_blue">
+    <div>
+        <h3>Accomplishments</h3>
+        <ul>
+            <li>Best student in web development at CAC-KFT</li>
+            <li>Achieved Recognition for organizing tutorials for peers to teach them.</li>
+        </ul>
+    </div>
+    <hr class="line_blue">
+    <footer>
+        <h2>Contact Form</h2>
+        <form class="" method="POST" action="#">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input name="first_name" class="form-control" placeholder="Enter First Name">
+            
+                <label for="fname">Last Name</label>
+                <input name="last_name" class="form-control" placeholder="Enter Last Name">
+            
+               <label for="exampleInputEmail1">Email address</label>
+               <input name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+               <label for="message">Message</label>
+               <textarea name="message" class="form-control" id="message" placeholder="Message"></textarea>
+
+               <button type="submit" class="btn_submit">Submit</button>
+            </div>
+          </form>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
